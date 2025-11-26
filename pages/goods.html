@@ -4,78 +4,237 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Товары - Семестровая работа</title>
-    <link rel="stylesheet" href="../style/styles.css">
+    <title>Товары - Портфолио</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
 </head>
 
-<body>
-    <div class="page-container">
-        <header class="header">
-            <h1>Наши товары</h1>
+<body class="bg-light">
+    <div class="container-fluid p-0">
+        <!-- Header -->
+        <header class="bg-primary text-white py-4">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col">
+                        <h1 class="h3 mb-1">Мой Портфолио</h1>
+                        <p class="mb-0 opacity-75">Студент разработчик</p>
+                    </div>
+                    <div class="col-auto">
+                        <span class="badge bg-light text-primary">ЭФБО-01-22</span>
+                    </div>
+                </div>
+            </div>
         </header>
 
-        <nav class="nav">
-            <ul class="nav-list">
-                <li class="nav-item"><a class="nav-link" href="../index.html">Главная</a></li>
-                <li class="nav-item"><a class="nav-link" href="news.html">Новости</a></li>
-                <li class="nav-item"><a class="nav-link" href="practices.html">Практики</a></li>
-                <li class="nav-item"><a class="nav-link" href="goods.html">Товары</a></li>
-                <li class="nav-item"><a class="nav-link" href="contacts.html">Контакты</a></li>
-            </ul>
+        <!-- Navigation -->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="../index.html">
+                                <i class="bi bi-house me-1"></i>Главная
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="news.html">
+                                <i class="bi bi-newspaper me-1"></i>Новости
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="practices.html">
+                                <i class="bi bi-code-slash me-1"></i>Практики
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="goods.html">
+                                <i class="bi bi-cart me-1"></i>Товары
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contacts.html">
+                                <i class="bi bi-telephone me-1"></i>Контакты
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </nav>
 
-        <main class="content">
-            <section class="products-section">
-                <h2 class="section-title">Каталог товаров</h2>
-
-                <div class="products-grid">
-                    <article class="product-card">
-                        <img src="../images/image.png" alt="Свежий хлеб" class="product-image">
-                        <h3 class="product-name">Хлеб деревенский</h3>
-                        <p class="product-description">Свежий хлеб из натуральных ингредиентов, приготовленный по старинному рецепту. Хрустящая корочка и мягкая мякоть.</p>
-                        <p class="product-price">30₽</p>
-                        <button class="product-button">В корзину</button>
-                    </article>
-
-                    <article class="product-card">
-                        <img src="../images/i.png" alt="Красное вино" class="product-image">
-                        <h3 class="product-name">Вино красное</h3>
-                        <p class="product-description">Качественное вино выдержанное в дубовых бочках. Идеально подходит для ужина в кругу друзей и семейных праздников.</p>
-                        <p class="product-price">800₽</p>
-                        <button class="product-button">В корзину</button>
-                    </article>
-
-                    <article class="product-card">
-                        <img src="../images/9.png" alt="Чупа-чупс" class="product-image">
-                        <h3 class="product-name">Чупа-чупс</h3>
-                        <p class="product-description">Вкусный леденец на палочке для детей и взрослых. Разнообразие фруктовых вкусов, яркая упаковка, отличное настроение!</p>
-                        <p class="product-price">15₽</p>
-                        <button class="product-button">В корзину</button>
-                    </article>
-
-                    <article class="product-card">
-                        <img src="../images/image.png" alt="Хлеб ржаной" class="product-image">
-                        <h3 class="product-name">Хлеб ржаной</h3>
-                        <p class="product-description">Питательный ржаной хлеб с насыщенным вкусом. Богат клетчаткой и полезными веществами для здоровья.</p>
-                        <p class="product-price">35₽</p>
-                        <button class="product-button">В корзину</button>
-                    </article>
-
-                    <article class="product-card">
-                        <img src="../images/i.png" alt="Вино белое" class="product-image">
-                        <h3 class="product-name">Вино белое</h3>
-                        <p class="product-description">Лёгкое освежающее белое вино с фруктовыми нотами. Отлично сочетается с морепродуктами и белым мясом.</p>
-                        <p class="product-price">750₽</p>
-                        <button class="product-button">В корзину</button>
-                    </article>
+        <!-- Main Content -->
+        <main class="container my-4">
+            <div class="row mb-4">
+                <div class="col">
+                    <h2 class="h4 text-primary">Учебный проект - Интернет-магазин</h2>
+                    <p class="text-muted">Пример реализации интернет-магазина на Bootstrap</p>
                 </div>
-            </section>
+            </div>
+
+            <!-- Products Grid -->
+            <div class="row g-4">
+                <!-- Product 1 - Вино -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="card h-100 shadow-sm">
+                        <img src="../images/wine.jpg" class="card-img-top" alt="Вино" style="height: 250px; object-fit: cover;" onerror="this.src='data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzAwIiBoZWlnaHQ9IjI1MCIgdmlld0JveD0iMCAwIDMwMCAyNTAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxyZWN0IHdpZHRoPSIzMDAiIGhlaWdodD0iMjUwIiBmaWxsPSIjZjhmOGY4Ii8+Cjx0ZXh0IHg9IjUwJSIgeT0iNTAlIiBkb21pbmFudC1iYXNlbGluZT0ibWlkZGxlIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmaWxsPSIjOTk5IiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTQiPlZpbm88L3RleHQ+Cjwvc3ZnPgo='">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title">Красное вино</h5>
+                            <p class="card-text text-muted flex-grow-1">Каберне Совиньон, выдержка 3 года. Идеально подходит к мясу и сырам.</p>
+                            <div class="mt-auto">
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <span class="h5 text-primary mb-0">1 200 ₽</span>
+                                    <button class="btn btn-primary btn-sm">
+                                        <i class="bi bi-cart-plus"></i> В корзину
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 2 - Хлеб -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="card h-100 shadow-sm">
+                        <img src="../images/bread.jpg" class="card-img-top" alt="Хлеб" style="height: 250px; object-fit: cover;" onerror="this.src='data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzAwIiBoZWlnaHQ9IjI1MCIgdmlld0JveD0iMCAwIDMwMCAyNTAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxyZWN0IHdpZHRoPSIzMDAiIGhlaWdodD0iMjUwIiBmaWxsPSIjZjhmOGY4Ii8+Cjx0ZXh0IHg9IjUwJSIgeT0iNTAlIiBkb21pbmFudC1iYXNlbGluZT0ibWlkZGxlIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmaWxsPSIjOTk5IiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTQiPkhlYWQgQnJlYWQ8L3RleHQ+Cjwvc3ZnPgo='">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title">Домашний хлеб</h5>
+                            <p class="card-text text-muted flex-grow-1">Свежий ржаной хлеб с хрустящей корочкой. Вес: 500г.</p>
+                            <div class="mt-auto">
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <span class="h5 text-primary mb-0">85 ₽</span>
+                                    <button class="btn btn-primary btn-sm">
+                                        <i class="bi bi-cart-plus"></i> В корзину
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 3 - Чупа-Чупс -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="card h-100 shadow-sm">
+                        <img src="../images/chupa-chups.jpg" class="card-img-top" alt="Чупа-Чупс" style="height: 250px; object-fit: cover;" onerror="this.src='data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzAwIiBoZWlnaHQ9IjI1MCIgdmlld0JveD0iMCAwIDMwMCAyNTAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxyZWN0IHdpZHRoPSIzMDAiIGhlaWdodD0iMjUwIiBmaWxsPSIjZjhmOGY4Ii8+Cjx0ZXh0IHg9IjUwJSIgeT0iNTAlIiBkb21pbmFudC1iYXNlbGluZT0ibWlkZGxlIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmaWxsPSIjOTk5IiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTQiPkNodXBhIENodXBzPC90ZXh0Pgo8L3N2Zz4K'">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title">Чупа-Чупс</h5>
+                            <p class="card-text text-muted flex-grow-1">Легендарные леденцы на палочке. Вкус: клубника.</p>
+                            <div class="mt-auto">
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <span class="h5 text-primary mb-0">35 ₽</span>
+                                    <button class="btn btn-primary btn-sm">
+                                        <i class="bi bi-cart-plus"></i> В корзину
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 4 - Молоко -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="card h-100 shadow-sm">
+                        <img src="../images/milk.jpg" class="card-img-top" alt="Молоко" style="height: 250px; object-fit: cover;" onerror="this.src='data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzAwIiBoZWlnaHQ9IjI1MCIgdmlld0JveD0iMCAwIDMwMCAyNTAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxyZWN0IHdpZHRoPSIzMDAiIGhlaWdodD0iMjUwIiBmaWxsPSIjZjhmOGY4Ii8+Cjx0ZXh0IHg9IjUwJSIgeT0iNTAlIiBkb21pbmFudC1iYXNlbGluZT0ibWlkZGxlIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmaWxsPSIjOTk5IiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTQiPk1pbGs8L3RleHQ+Cjwvc3ZnPgo='">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title">Молоко</h5>
+                            <p class="card-text text-muted flex-grow-1">Свежее пастеризованное молоко 3.2%. Объем: 1 литр.</p>
+                            <div class="mt-auto">
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <span class="h5 text-primary mb-0">75 ₽</span>
+                                    <button class="btn btn-primary btn-sm">
+                                        <i class="bi bi-cart-plus"></i> В корзину
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 5 - Сыр -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="card h-100 shadow-sm">
+                        <img src="../images/cheese.jpg" class="card-img-top" alt="Сыр" style="height: 250px; object-fit: cover;" onerror="this.src='data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzAwIiBoZWlnaHQ9IjI1MCIgdmlld0JveD0iMCAwIDMwMCAyNTAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxyZWN0IHdpZHRoPSIzMDAiIGhlaWdodD0iMjUwIiBmaWxsPSIjZjhmOGY4Ii8+Cjx0ZXh0IHg9IjUwJSIgeT0iNTAlIiBkb21pbmFudC1iYXNlbGluZT0ibWlkZGxlIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmaWxsPSIjOTk5IiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTQiPkNoZWVzZTwvdGV4dD4KPC9zdmc+Cg=='">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title">Сыр Гауда</h5>
+                            <p class="card-text text-muted flex-grow-1">Голландский сыр с нежным вкусом. Вес: 200г.</p>
+                            <div class="mt-auto">
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <span class="h5 text-primary mb-0">220 ₽</span>
+                                    <button class="btn btn-primary btn-sm">
+                                        <i class="bi bi-cart-plus"></i> В корзину
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 6 - Шоколад -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="card h-100 shadow-sm">
+                        <img src="../images/chocolate.jpg" class="card-img-top" alt="Шоколад" style="height: 250px; object-fit: cover;" onerror="this.src='data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzAwIiBoZWlnaHQ9IjI1MCIgdmlld0JveD0iMCAwIDMwMCAyNTAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxyZWN0IHdpZHRoPSIzMDAiIGhlaWdodD0iMjUwIiBmaWxsPSIjZjhmOGY4Ii8+Cjx0ZXh0IHg9IjUwJSIgeT0iNTAlIiBkb21pbmFudC1iYXNlbGluZT0ibWlkZGxlIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmaWxsPSIjOTk5IiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTQiPkNob2NvbGF0ZTwvdGV4dD4KPC9zdmc+Cg=='">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title">Шоколад молочный</h5>
+                            <p class="card-text text-muted flex-grow-1">Швейцарский молочный шоколад с орехами. Вес: 100г.</p>
+                            <div class="mt-auto">
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <span class="h5 text-primary mb-0">95 ₽</span>
+                                    <button class="btn btn-primary btn-sm">
+                                        <i class="bi bi-cart-plus"></i> В корзину
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Additional Info Section -->
+            <div class="row mt-5">
+                <div class="col-12">
+                    <div class="card shadow-sm">
+                        <div class="card-header bg-light">
+                            <h3 class="card-title h5 mb-0">
+                                <i class="bi bi-info-circle text-primary"></i> О проекте
+                            </h3>
+                        </div>
+                        <div class="card-body">
+                            <p class="card-text">
+                                Данный интернет-магазин является учебным проектом, разработанным в рамках изучения Bootstrap. Реализованы основные компоненты: карточки товаров, адаптивная сетка, навигация.
+                            </p>
+                            <p class="card-text">
+                                <strong>Технологии:</strong> HTML5, CSS3, Bootstrap 5, JavaScript
+                            </p>
+                            <div class="d-flex gap-2 flex-wrap">
+                                <span class="badge bg-primary">Bootstrap</span>
+                                <span class="badge bg-success">JavaScript</span>
+                                <span class="badge bg-info">Responsive Design</span>
+                                <span class="badge bg-warning">CSS Grid</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </main>
 
-        <footer class="footer">
-            <p>© 2024 Интернет-магазин. Все права защищены.</p>
+        <!-- Footer -->
+        <footer class="bg-dark text-white py-4 mt-5">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-md-6">
+                        <p class="mb-0">&copy; 2024 Портфолио студента. Все права защищены.</p>
+                    </div>
+                    <div class="col-md-6 text-md-end">
+                        <a href="contacts.html" class="text-white text-decoration-none me-3">Контакты</a>
+                        <a href="#" class="text-white text-decoration-none">Политика конфиденциальности</a>
+                    </div>
+                </div>
+            </div>
         </footer>
     </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>

@@ -1,0 +1,122 @@
+﻿<!DOCTYPE html>
+<html lang="ru" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Главная - Портфолио</title>
+    <link rel="stylesheet" href="style/styles.css">
+</head>
+
+<body class="page">
+    <div class="page__container">
+        <!-- Переключатель темы -->
+        <div class="theme-switcher">
+            <button class="theme-switcher__button" onclick="toggleTheme()">🌓</button>
+        </div>
+
+        <!-- Шапка -->
+        <header class="header">
+            <h1 class="header__title">Моё портфолио</h1>
+        </header>
+
+        <!-- Навигация -->
+        <nav class="nav">
+            <ul class="nav__list">
+                <li class="nav__item">
+                    <a class="nav__link nav__link--active" href="index.html">Главная</a>
+                </li>
+                <li class="nav__item">
+                    <a class="nav__link" href="pages/news.html">Новости</a>
+                </li>
+                <li class="nav__item">
+                    <a class="nav__link" href="pages/practices.html">Практики</a>
+                </li>
+                <li class="nav__item">
+                    <a class="nav__link" href="pages/goods.html">Товары</a>
+                </li>
+                <li class="nav__item">
+                    <a class="nav__link" href="pages/contacts.html">Контакты</a>
+                </li>
+            </ul>
+        </nav>
+
+        <!-- Основной контент -->
+        <main class="content">
+            <!-- Профиль -->
+            <section class="profile">
+                <h2 class="section__title">Профиль студента</h2>
+                <div class="card">
+                    <img class="profile__image" src="images/shark.png" alt="Фото студента">
+                    <h3 class="profile__name">Ковалишин Александр</h3>
+                    <p class="profile__group">ЭФБО-13-24</p>
+                </div>
+            </section>
+
+            <!-- Обо мне -->
+            <section class="section">
+                <h2 class="section__title">Обо мне</h2>
+                <div class="card">
+                    <div class="profile__about">
+                        <p>Студент, увлекаюсь веб-разработкой. Изучаю HTML, CSS и JavaScript. Люблю создавать красивые и функциональные сайты.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Навыки -->
+            <section class="section">
+                <h2 class="section__title">Мои навыки</h2>
+                <div class="skills">
+                    <span class="skills__tag">HTML5</span>
+                    <span class="skills__tag">CSS3</span>
+                    <span class="skills__tag">JavaScript</span>
+                    <span class="skills__tag">Адаптивная верстка</span>
+                    <span class="skills__tag">БЭМ</span>
+                </div>
+            </section>
+
+            <!-- Проекты -->
+            <section class="section">
+                <h2 class="section__title">Проекты</h2>
+                <div class="grid grid--auto-fit">
+                    <div class="card card--interactive">
+                        <h3 class="card__title">Личный сайт</h3>
+                        <p class="card__description">Сайт-портфолио на HTML и CSS с использованием современных технологий</p>
+                    </div>
+                    <div class="card card--interactive">
+                        <h3 class="card__title">Todo приложение</h3>
+                        <p class="card__description">Простое приложение для управления задачами с интуитивным интерфейсом</p>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!-- Подвал -->
+        <footer class="footer">
+            <p>&copy; 2024 Мой сайт. Все права защищены.</p>
+        </footer>
+    </div>
+
+    <script>
+        // Переключение темы
+        function toggleTheme() {
+            const currentTheme = document.documentElement.getAttribute('data-theme');
+            const newTheme = currentTheme === 'light' ? 'dark' : 'light';
+            document.documentElement.setAttribute('data-theme', newTheme);
+
+            // Сохраняем выбор пользователя
+            localStorage.setItem('theme', newTheme);
+        }
+
+        // Загрузка сохраненной темы
+        function loadTheme() {
+            const savedTheme = localStorage.getItem('theme') || 'light';
+            document.documentElement.setAttribute('data-theme', savedTheme);
+        }
+
+        // Инициализация при загрузке
+        document.addEventListener('DOMContentLoaded', loadTheme);
+    </script>
+</body>
+
+</html>
